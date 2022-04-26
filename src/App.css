@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+body > #root > div {
+  height: 100vh;
+}
+.main div {
+  float: left;
+  clear: none;
+}
+.left-side{
+background-color: dodgerblue;
+height: 100%;
+width: 51%;
+
+}
+.right-side{
+  background-color: white;
+  height: 100%;
+  width: 49%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.img{
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bird{
+  height: 40px;
+  width: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.fa-google {
+  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.tag {
+  width: 50%; 
+  text-align: center; 
+  border-bottom: 1px solid #f1f1f1; 
+  line-height: 0.1em;
+  margin: 10px 0 20px; 
+} 
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tag span { 
+   background:#fff; 
+   padding:0 10px; 
 }

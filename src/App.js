@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import logo from './twitter.png';
 import './App.css';
+import Forms from './Forms';
+import twitterMain from "./twittermain.jpg"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='main'>
+        <div className='left-side'><img className='img' src={logo} />
+        {/* <center><img className='twitterMain' src={twitterMain}></img></center> */}
+        </div>
+        <div className='right-side'><Forms/></div>
     </div>
   );
 }
